@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <script src="libs/gsap/gsap.min.js"></script>
+    <script src="libs/gsap/ScrollTrigger.min.js"></script>
+    <script src="libs/gsap/ScrollSmoother.min.js"></script>
+
+    <script src="js/app.js" defer></script>
+    <!-- defer указывает на то что даннные скрипты не блокируют загрузку данного контента который находиться в теге бади а загружаються уже после как вся страница будет загружена -->
+    <!-- добавлять подключение js перед закрывающий тегом body уже не есть актуальное так как можно использовать defer-->
+    <title>Document</title>
+  </head>
+  <body>
+
+   <div class="wrapper">
+    <div class="content">
+      <header class="main-header">
+        <div class="layers">
+          <div class="layer__header">
+            <div class="layers__caption">Welcome to Parallax</div>
+            <div class="layers__title">Fairy Forest</div>
+          </div>
+          <div class="layer layers__base" style="background-image:url(img/layer-base.png);"></div>
+          <div class="layer layers__middle" style="background-image:url(img/layer-middle.png);"></div>
+          <div class="layer layers__front" style="background-image:url(img/layer-front.png);"></div>
+        </div>
+      </header>
+  
+  
+      <article class="main-article" style="background-image:url(img/dungeon.jpg)">
+        <div class="main-article__content">
+          <h2 class="main-article__header">To be continued</h2>
+          <p class="main-article__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero minima optio vitae, odit obcaecati voluptate laborum, deserunt reprehenderit explicabo nam sint libero culpa quam cupiditate quasi dolorum dolorem consequuntur adipisci et tempore.</p>
+        </div>
+        <div class="copy">© WebDesign Master</div>
+      </article>
+    </div>
+   </div>
+
+  </body>
+</html>
